@@ -1,6 +1,6 @@
 # Practice Code Review
 
-Before jumping into group projects using JS, take some time to learn about _code review_ and _code quality automation_ . Practicing with these concepts now will make the transition to collaborative development much smoother.
+Before jumping into group projects using JS, take some time to learn about _code review_ and _code quality automation_ . Practicing with these concepts now will make the transition to collaborative development much smoother..
 
 - Big Picture
   - [The Challenges](#the-challenges)
