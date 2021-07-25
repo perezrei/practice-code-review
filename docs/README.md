@@ -17,6 +17,8 @@
 - deep-flat
 - difference
 - intersection
+  - evan-group-solution
+    - [evan-group-solution.js](#srcintersectionevan-group-solutionevan-group-solutionjs)
 - sort-numbers
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
@@ -39,6 +41,14 @@
 ---
 
 # /intersection
+
+## /evan-group-solution
+
+<details><summary><a href="../../src/intersection/evan-group-solution/evan-group-solution.js" id="srcintersectionevan-group-solutionevan-group-solutionjs">../src/intersection/evan-group-solution/evan-group-solution.js</a></summary>
+
+</details>
+
+---
 
 ---
 
