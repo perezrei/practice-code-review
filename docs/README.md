@@ -17,6 +17,8 @@
 - deep-flat
 - difference
 - intersection
+  - evan-group-solution
+    - [evan-group-solution.js](#srcintersectionevan-group-solutionevan-group-solutionjs)
 - sort-numbers
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
@@ -39,6 +41,45 @@
 ---
 
 # /intersection
+
+## /evan-group-solution
+
+<details><summary><a href="../../src/intersection/evan-group-solution/evan-group-solution.js" id="srcintersectionevan-group-solutionevan-group-solutionjs">../src/intersection/evan-group-solution/evan-group-solution.js</a></summary>
+
+<a name="evanGroupSolution"></a>
+
+## evanGroupSolution ⇒ <code>Array</code>
+
+Creates an array of values that are in both the first and the second arrays.
+
+Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
+
+**Note:** This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param    | Type               | Default         | Description            |
+| -------- | ------------------ | --------------- | ---------------------- |
+| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.  |
+| [values] | <code>Array</code> | <code>[]</code> | The values to include. |
+
+**Example**
+
+```js
+intersection([2, 1], [2, 3]);
+// -> [2]
+```
+
+**Example**
+
+```js
+intersection([2, 1, 2], [2, 3]);
+// -> [2]
+```
+
+</details>
+
+---
 
 ---
 
