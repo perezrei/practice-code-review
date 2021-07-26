@@ -20,9 +20,7 @@
 export const difference = (array = [], values = []) => {
   // create an array where we will put the filtered valued
   const isDifferentItem = (item) => {
-    const isIncluded = values.includes(item);
-    const isNotIncluded = !isIncluded;
-    return isNotIncluded;
+    return !values.includes(item);
   };
   const newArr = array.filter(isDifferentItem);
   return newArr;

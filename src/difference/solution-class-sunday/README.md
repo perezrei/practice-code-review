@@ -1,4 +1,4 @@
-# challenge name: strategy name
+# Difference: solution-class-sunday
 
 <!-- BEGIN DOCS -->
 
