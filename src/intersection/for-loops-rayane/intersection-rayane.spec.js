@@ -97,4 +97,13 @@ describe('findIntersection finds all the values shared between two arrays and re
       expect(actual).toEqual(expected);
     });
   });
+  describe('testing for side-effects', () => {
+    it('returns a new array', () => {
+      const arg1 = ['banana', 'cherry', 'avocado'];
+      const arg2 = ['mango', 'cherry', 'apple'];
+      const returnedArray = findIntersection(arg1, arg2);
+      const notTheSame = arg1 !== returnedArray;
+      expect(notTheSame).toEqual(true);
+    });
+  });
 });
