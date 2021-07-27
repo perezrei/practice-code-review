@@ -17,6 +17,8 @@
 - deep-flat
 - difference
 - intersection
+  - for-loops-rayane
+    - [intersection-rayane.js](#srcintersectionfor-loops-rayaneintersection-rayanejs)
 - sort-numbers
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
@@ -39,6 +41,45 @@
 ---
 
 # /intersection
+
+## /for-loops-rayane
+
+<details><summary><a href="../../src/intersection/for-loops-rayane/intersection-rayane.js" id="srcintersectionfor-loops-rayaneintersection-rayanejs">../src/intersection/for-loops-rayane/intersection-rayane.js</a></summary>
+
+<a name="findIntersection"></a>
+
+## findIntersection ⇒ <code>Array</code>
+
+Creates an array of values that are in both the first and the second arrays.
+
+Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
+
+**Note:** This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param    | Type               | Default         | Description            |
+| -------- | ------------------ | --------------- | ---------------------- |
+| [array1] | <code>Array</code> | <code>[]</code> | The array to inspect.  |
+| [array2] | <code>Array</code> | <code>[]</code> | The values to include. |
+
+**Example**
+
+```js
+intersection([2, 1], [2, 3]);
+// -> [2]
+```
+
+**Example**
+
+```js
+intersection([2, 1, 2], [2, 3]);
+// -> [2]
+```
+
+</details>
+
+---
 
 ---
 
