@@ -21,14 +21,14 @@
  */
 
 export const findIntersection = (array1 = [], array2 = []) => {
-  //create a new empty array to store the common items
+  // create a new empty array to store the common items
   const commonItems = [];
-  //use nested loops on length of both arrays
+  // use nested loops on length of both arrays
   for (let i = 0; i < array1.length; i++) {
     for (let j = 0; j < array2.length; j++) {
       if (array1[i] === array2[j]) {
         // if item is present in both arrays
-        commonItems.push(array1[i]); //add to the new array
+        commonItems.push(array1[i]); // add to the new array
       }
     }
   }
