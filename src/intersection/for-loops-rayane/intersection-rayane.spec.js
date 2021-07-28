@@ -97,6 +97,23 @@ describe('findIntersection finds all the values shared between two arrays and re
       expect(actual).toEqual(expected);
     });
   });
+  describe('testing for tricky edge cases', () => {
+    it('string numbers and numerical values', () => {
+      const actual = findIntersection(['1', 2, 3, 1, '100'], [1, '2', 3, 100]);
+      const expected = [3, 1];
+      expect(actual).toEqual(expected);
+    });
+    it('boolean values and numbers', () => {
+      const actual = findIntersection([true, 0, 2], [false, 1, 2]);
+      const expected = [2];
+      expect(actual).toEqual(expected);
+    });
+    it('duplicate values', () => {
+      const actual = findIntersection([1, 21, 1, 21, 2, 3], [0, 2, 21, 0, 33]);
+      const expected = [21, 2];
+      expect(actual).toEqual(expected);
+    });
+  });
   describe('testing for side-effects', () => {
     it('returns a new array', () => {
       const arg1 = ['banana', 'cherry', 'avocado'];
@@ -104,6 +121,12 @@ describe('findIntersection finds all the values shared between two arrays and re
       const returnedArray = findIntersection(arg1, arg2);
       const notTheSame = arg1 !== returnedArray;
       expect(notTheSame).toEqual(true);
+    });
+    it('argument has not changed', () => {
+      const arg1 = ['banana', 'cherry', 'avocado'];
+      const arg2 = ['mango', 'cherry', 'apple'];
+      findIntersection(arg1, arg2);
+      expect(arg1).toEqual(['banana', 'cherry', 'avocado']);
     });
   });
 });

@@ -32,5 +32,9 @@ export const findIntersection = (array1 = [], array2 = []) => {
       }
     }
   }
-  return commonItems;
+  // remove duplicate elements from the new array
+  const removeDuplicateItems = commonItems.filter((value, index) => {
+    return commonItems.indexOf(value) === index;
+  });
+  return removeDuplicateItems;
 };

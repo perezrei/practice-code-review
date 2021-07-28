@@ -29,14 +29,13 @@ Write a function that finds all the values shared between two arrays.
 
 ## Strategy
 
-I chose to used nested for-loops and push() method to solve this challenge.
-
-Iteration with stepper variable.
+I chose to used nested for-loops, push() and filter() methods to solve this challenge.
 
 1. Create a new empty array to store the common items.
 2. Loop through array1 and iterate it from beginning to the end.
 3. Loop through array2 and iterate it from beginning to the end.
 4. Compare each item from array1 to array2 and if it finds any common item then return to a new array.
+5. Use a second function to filter duplicate elements and get only unique values out of the matched values.
 
 ---
 
@@ -44,6 +43,7 @@ Iteration with stepper variable.
 
 - for-loop - It iterates through two arrays.
 - .push() - It places the common elements of two arrays to a new array.
+- .filter() - It discards repeating elements from an array.
 
 ---
 
@@ -62,7 +62,10 @@ const findMutualFriends = (list1 = [], list2 = []) => {
       }
     }
   }
-  return commonFriends;
+  const removeDuplicateValues = commonFriends.filter((value, index) => {
+    return commonFriends.indexOf(value) === index;
+  });
+  return removeDuplicateValues;
 };
 
 const listOfMutualFriends = findMutualFriends(
@@ -76,4 +79,4 @@ console.log(listOfMutualFriends); //["Bill", "Fiona"]
 
 ## Inspiration
 
-[This article from JavaScript in Plain English](https://javascript.plainenglish.io/typescript-intersection-best-practice-6a7de85bb2f1).
+This article from [JavaScript in Plain English](https://javascript.plainenglish.io/typescript-intersection-best-practice-6a7de85bb2f1).
