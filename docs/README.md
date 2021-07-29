@@ -22,6 +22,8 @@
   - for-loops-rayane
     - [intersection-rayane.js](#srcintersectionfor-loops-rayaneintersection-rayanejs)
 - sort-numbers
+  - built-in-sort-rayane
+    - [sort-numbers-rayane.js](#srcsort-numbersbuilt-in-sort-rayanesort-numbers-rayanejs)
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
 
@@ -121,6 +123,44 @@ intersection([2, 1, 2], [2, 3]);
 ---
 
 # /sort-numbers
+
+## /built-in-sort-rayane
+
+<details><summary><a href="../../src/sort-numbers/built-in-sort-rayane/sort-numbers-rayane.js" id="srcsort-numbersbuilt-in-sort-rayanesort-numbers-rayanejs">../src/sort-numbers/built-in-sort-rayane/sort-numbers-rayane.js</a></summary>
+
+<a name="sortArrayOfNumbers"></a>
+
+## sortArrayOfNumbers ⇒ <code>Array.&lt;number&gt;</code>
+
+Sorts an array of numbers from smallest to largest.
+
+Returns a new array without modifying the original array.
+
+Does not need to support: NaN, Infinity, -Infinity.
+
+**Returns**: <code>Array.&lt;number&gt;</code> - A new array with the same numbers, but sorted.
+
+| Param      | Type                              | Default         | Description                   |
+| ---------- | --------------------------------- | --------------- | ----------------------------- |
+| [numArray] | <code>Array.&lt;number&gt;</code> | <code>[]</code> | The array of numbers to sort. |
+
+**Example**
+
+```js
+sortArrayOfNumbers([1.5, 1, -1.5, 0, -1]);
+// -> [-1.5, -1, 0, 1, 1.5]
+```
+
+**Example**
+
+```js
+sortArrayOfNumbers([-1, 0, 1]);
+// -> [-1, 0, 1]
+```
+
+</details>
+
+---
 
 ## /example-built-in-sort
 
