@@ -15,10 +15,10 @@
 <!-- BEGIN TOC -->
 
 - deep-flat
+  - deepflat-daniel
+    - [deepflat-daniel.js](#srcdeep-flatdeepflat-danieldeepflat-danieljs)
 - difference
 - intersection
-  - for-loops-rayane
-    - [intersection-rayane.js](#srcintersectionfor-loops-rayaneintersection-rayanejs)
 - sort-numbers
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
@@ -34,6 +34,42 @@
 
 # /deep-flat
 
+## /deepflat-daniel
+
+<details><summary><a href="../../src/deep-flat/deepflat-daniel/deepflat-daniel.js" id="srcdeep-flatdeepflat-danieldeepflat-danieljs">../src/deep-flat/deepflat-daniel/deepflat-daniel.js</a></summary>
+
+<a name="deepFlatDaniel"></a>
+
+## deepFlatDaniel ⇒ <code>Array</code>
+
+Converts a nested array into a single array with no nesting.
+
+It returns a new array and there are no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new flattened array.
+
+| Param   | Type               | Default         | Description           |
+| ------- | ------------------ | --------------- | --------------------- |
+| [array] | <code>Array</code> | <code>[]</code> | The array to flatten. |
+
+**Example**
+
+```js
+deepFlat([1, [2, [3, [4]], 5]]);
+// -> [1, 2, 3, 4, 5]
+```
+
+**Example**
+
+```js
+deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
+// -> ['a', 'b', 'c', 'd', 'e']
+```
+
+</details>
+
+---
+
 ---
 
 # /difference
@@ -41,45 +77,6 @@
 ---
 
 # /intersection
-
-## /for-loops-rayane
-
-<details><summary><a href="../../src/intersection/for-loops-rayane/intersection-rayane.js" id="srcintersectionfor-loops-rayaneintersection-rayanejs">../src/intersection/for-loops-rayane/intersection-rayane.js</a></summary>
-
-<a name="findIntersection"></a>
-
-## findIntersection ⇒ <code>Array</code>
-
-Creates an array of values that are in both the first and the second arrays.
-
-Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
-
-**Note:** This function returns a new array, and has no side-effects.
-
-**Returns**: <code>Array</code> - Returns the new array of filtered values.
-
-| Param    | Type               | Default         | Description            |
-| -------- | ------------------ | --------------- | ---------------------- |
-| [array1] | <code>Array</code> | <code>[]</code> | The array to inspect.  |
-| [array2] | <code>Array</code> | <code>[]</code> | The values to include. |
-
-**Example**
-
-```js
-intersection([2, 1], [2, 3]);
-// -> [2]
-```
-
-**Example**
-
-```js
-intersection([2, 1, 2], [2, 3]);
-// -> [2]
-```
-
-</details>
-
----
 
 ---
 

@@ -15,7 +15,7 @@
  * deepFlat(['a', ['b', [['c'], ['d']], 'e']]);
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
- export const deepFlatDaniel = (array = []) => {
+export const deepFlatDaniel = (array = []) => {
   // using the flat method on the input array, making sure it works with any array size
   const flattenedArray = array.flat(Infinity);
   return flattenedArray;

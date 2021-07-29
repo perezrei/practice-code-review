@@ -22,6 +22,6 @@
  * // -> []
  */
 export const splitObjectDaniel = (Object) => {
-    const array = console.log(Object);
-    return array;
+  const array = console.log(Object);
+  return array;
 };
