@@ -17,7 +17,9 @@
  * // -> [-1, 0, 1]
  */
 export const sortArrayOfNumbers = (numArray = []) => {
-  // create a copy of the original array
+  // create a copy of the original array and sort the values in ascending numerical order
   const sortedNumbers = numArray.slice().sort((a, b) => a - b);
-  return sortedNumbers; // returns a new sorted array
+  // filter out the numbers from the array
+  const numbersOnly = sortedNumbers.filter(Number.isFinite);
+  return numbersOnly; // return an array only with numbers
 };

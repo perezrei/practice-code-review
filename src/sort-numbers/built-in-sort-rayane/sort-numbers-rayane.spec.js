@@ -63,6 +63,20 @@ describe('sortArrayOfNumbers sorts an array of numbers', () => {
       const expected = [0, 2];
       expect(received).toEqual(expected);
     });
+    it('falsy values, strings and whole numbers', () => {
+      const actual = sortArrayOfNumbers([
+        1,
+        2,
+        3,
+        '4',
+        undefined,
+        'a',
+        [],
+        null,
+      ]);
+      const expected = [1, 2, 3];
+      expect(actual).toEqual(expected);
+    });
     it('empty values', () => {
       const actual = sortArrayOfNumbers([]);
       const expected = [];

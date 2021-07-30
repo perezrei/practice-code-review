@@ -1,5 +1,3 @@
-/* import { sortArrayOfNumbers } from './sort-numbers-rayane.js';
-
 /*
   anything goes in this file, it's yours to make mistakes and be messy
     you don't need to lint this file, it's only for you
