@@ -13,8 +13,8 @@ describe('sortArrayOfNumbers sorts an array of numbers', () => {
       expect(received).toEqual(expected);
     });
     it('mixed whole and decimal numbers', () => {
-      const received = sortArrayOfNumbers([4.52, 0.2, 9.7]);
-      const expected = [0.2, 4.52, 9.7];
+      const received = sortArrayOfNumbers([2, 4.52, 0.2, 9.7, 4]);
+      const expected = [0.2, 2, 4, 4.52, 9.7];
       expect(received).toEqual(expected);
     });
   });

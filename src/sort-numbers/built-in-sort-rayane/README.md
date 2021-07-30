@@ -6,13 +6,15 @@ Takes in an array of numbers and returns a new array with the same numbers sorte
 
 ## Strategy
 
-I chose to add a slice method before passing the compare function to the sort method to prevent the original array to be modified.
+I chose to use built-in methods to prevent the original array to be modified and to make sure the resulting array only include integer and float numbers.
 
 ---
 
 ## Implementation
 
-- .splice() - to keep the original array intact and prevent it from being changed.
+I chose to add a slice method before passing the compare function to the sort method to prevent the original array to be modified.
+
+- .slice() - to keep the original array intact and prevent it from being changed.
 - .sort() - to sort an array of numbers in ascending numerical order.
 - .filter() - to filter out only numbers in an array.
 - Number.isFinite() - will not return true for any value that is not of the type number.
