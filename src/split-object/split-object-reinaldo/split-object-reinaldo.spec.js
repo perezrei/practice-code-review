@@ -5,10 +5,18 @@ describe('Splits an object into multiple objects with one key/value pair each.',
     const actual = splitObjectReinaldo({ a: 1, b: 2, c: 3 });
     expect(actual).toEqual([{ a: 1 }, { b: 2 }, { c: 3 }]);
   });
-  // it('new objects are returned in an array', () => {
-  //   const actual = splitObjectReinaldo({ a: 1, b: 2, c: 3 });
-  //   expect(actual).toEqual([{ a: 1 }, { b: 2 }, { c: 3 }]);
-  // });
+  it('another object with decimal numbers', () => {
+    const actual = splitObjectReinaldo({
+      eyes: 'blue',
+      height: 6.2,
+      hair: 'black',
+    });
+    expect(actual).toEqual([
+      { eyes: 'blue' },
+      { height: 6.2 },
+      { hair: 'black' },
+    ]);
+  });
 });
 
 describe('Testing with different arguments', () => {
@@ -46,16 +54,24 @@ describe('Testing with different arguments', () => {
       { age: true },
     ]);
   });
-  it('testing with NaN, Undefined and null', () => {
+  it('testing with undefined', () => {
     const actual = splitObjectReinaldo({
-      name: null,
-      lastname: undefined,
-      age: NaN,
+      name: 'Bob',
+      lastname: 'Geldof',
+      age: undefined,
     });
     expect(actual).toEqual([
-      { name: null },
-      { lastname: undefined },
-      { age: NaN },
+      { name: 'Bob' },
+      { lastname: 'Geldof' },
+      { age: undefined },
     ]);
+  });
+  it('testing with null', () => {
+    const actual = splitObjectReinaldo({
+      name: 'Bob',
+      lastname: null,
+      age: 25,
+    });
+    expect(actual).toEqual([{ name: 'Bob' }, { lastname: null }, { age: 25 }]);
   });
 });
