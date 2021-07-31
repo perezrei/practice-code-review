@@ -8,9 +8,9 @@ To return an array of objects from one object using built-in .js methods Objects
 
 ## Implementation
 
-The Object.values() method returns an array of a given object's own enumerable property values.
+The Object.entries() method returns an array of a given object's own enumerable property values.
 
-The Map object holds key-value pairs and remembers the original insertion order of the keys.
+The Map object holds key-value pairs and remembers the original insertion order of the keys in order to create tne new array of objects.
 
 ## Use Cases
 
